@@ -14,7 +14,7 @@ pkg_name = "sonar_#{node['sonarqube']['version']}_all.deb"
 
 remote_file ::File.join(Chef::Config[:file_cache_path], pkg_name) do
   source "#{node['sonarqube']['pkg']['uri']}/#{pkg_name}"
-  checksum node['sonarqube']['pkg']['checksum']
+#  checksum node['sonarqube']['pkg']['checksum']
 end
 
 dpkg_package 'sonar' do

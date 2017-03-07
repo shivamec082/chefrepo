@@ -1,8 +1,8 @@
 
-default['sonarqube']['version'] = '4.4'
+default['sonarqube']['version'] = '6.2'
 default['sonarqube']['pkg']['uri'] = 'http://downloads.sourceforge.net/project/sonar-pkg/deb/binary/'
-default['sonarqube']['pkg']['checksum'] = 'f6d4c647c1280b8d3b146dbf78e32ca52b8a99e8809193d50d033bbe0b1606f0'
-default['sonarqube']['path'] = '/opt/sonar'
+#default['sonarqube']['pkg']['checksum'] = 'nil'
+default['sonarqube']['path'] = '/opt/sonarQube'
 default['sonarqube']['system']['user'] = 'sonar'
 default['sonarqube']['system']['group'] = 'adm'
 default['sonarqube']['http']['url'] = 'http://35.166.86.52'
